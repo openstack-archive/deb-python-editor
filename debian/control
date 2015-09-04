@@ -37,7 +37,7 @@ Description: programmatically open an editor, capture the result - Python 2.7
  .
  This package contains the Python 2.7 module.
 
-Package: python3-python-editor
+Package: python3-editor
 Architecture: all
 Depends: python-six, ${python3:Depends}, ${misc:Depends}
 Description: programmatically open an editor, capture the result - Python 3.x

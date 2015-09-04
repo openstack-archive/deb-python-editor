@@ -12,13 +12,13 @@ include /usr/share/openstack-pkg-tools/pkgos.make
 override_dh_auto_install:
 	set -e ; for pyvers in $(PYTHONS); do \
 		python$$pyvers setup.py install --install-layout=deb \
-			--root $(CURDIR)/debian/python-python-editor; \
+			--root $(CURDIR)/debian/python-editor; \
 	done
 	set -e ; for pyvers in $(PYTHON3S); do \
 		python$$pyvers setup.py install --install-layout=deb \
-			--root $(CURDIR)/debian/python3-python-editor; \
+			--root $(CURDIR)/debian/python3-editor; \
 	done
-	rm -rf $(CURDIR)/debian/python*-python-editor/usr/lib/python*/dist-packages/*.pth
+	rm -rf $(CURDIR)/debian/python*-editor/usr/lib/python*/dist-packages/*.pth
 
 override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))

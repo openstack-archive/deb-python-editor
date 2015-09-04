@@ -1,0 +1,61 @@
+Source: python-editor
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               openstack-pkg-tools,
+               python-setuptools,
+               python-all,
+               python3-setuptools,
+               python3-all
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-editor.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-editor.git
+Homepage: https://github.com/fmoo/python-editor
+
+Package: python-editor
+Architecture: all
+Depends: python-six, ${python:Depends}, ${misc:Depends}
+Description: programmatically open an editor, capture the result - Python 2.7
+ python-editor is a library that provides the editor module for
+ programmatically interfacing with your system's $EDITOR. The user can then
+ enter a commit message for example.
+ .
+ Editor first looks for the ${EDITOR} environment variable.  If set, it uses
+ the value as-is, without fallbacks. If no $EDITOR is set, editor will search
+ through a list of known editors, and use the first one that exists on the
+ system. For example, on Linux, editor will look for the following editors in
+ order:
+  * vim
+  * emacs
+  * nano
+ .
+ When calling the edit() function, editor will open the editor in a
+ subprocess, inheriting the parent process's stdin, stdout
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-python-editor
+Architecture: all
+Depends: python-six, ${python3:Depends}, ${misc:Depends}
+Description: programmatically open an editor, capture the result - Python 3.x
+ python-editor is a library that provides the editor module for
+ programmatically interfacing with your system's $EDITOR. The user can then
+ enter a commit message for example.
+ .
+ Editor first looks for the ${EDITOR} environment variable.  If set, it uses
+ the value as-is, without fallbacks. If no $EDITOR is set, editor will search
+ through a list of known editors, and use the first one that exists on the
+ system. For example, on Linux, editor will look for the following editors in
+ order:
+  * vim
+  * emacs
+  * nano
+ .
+ When calling the edit() function, editor will open the editor in a
+ subprocess, inheriting the parent process's stdin, stdout
+ .
+ This package contains the Python 3.x module.
+

@@ -1,0 +1,5 @@
+python-editor (0.4-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #798009)
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 04 Sep 2015 14:24:16 +0200

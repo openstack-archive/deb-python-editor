@@ -1,3 +1,9 @@
+python-editor (0.4-2) unstable; urgency=medium
+
+  * Added patch to search for /usr/bin/editor (Closes: #802232).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 02 Dec 2015 10:05:38 +0100
+
 python-editor (0.4-1) unstable; urgency=medium
 
   * Initial release. (Closes: #798009)

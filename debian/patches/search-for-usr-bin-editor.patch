@@ -1,0 +1,16 @@
+Description: Search for /usr/bin/editor
+Author: Thomas Goirand <zigo@debian.org>
+Bug-Debian: https://bugs.debian.org/802232
+Forwarded: https://github.com/fmoo/python-editor/pull/5
+Last-Update: 2015-12-02
+
+--- python-editor-0.4.orig/editor.py
++++ python-editor-0.4/editor.py
+@@ -26,6 +26,7 @@ class EditorError(RuntimeError):
+ def get_default_editors():
+     # TODO: Make platform-specific
+     return [
++        'editor',
+         'vim',
+         'emacs',
+         'nano',

@@ -11,8 +11,8 @@ Build-Depends: debhelper (>= 9),
                python3-setuptools,
                python3-all
 Standards-Version: 3.9.6
-Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-editor.git/
-Vcs-Git: https://anonscm.debian.org/git/openstack/python-editor.git
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-editor?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-python-editor -b debian/newton
 Homepage: https://github.com/fmoo/python-editor
 
 Package: python-editor

@@ -1,4 +1,4 @@
-python-editor (0.4-3) UNRELEASED; urgency=medium
+python-editor (0.4-3) unstable; urgency=medium
 
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https

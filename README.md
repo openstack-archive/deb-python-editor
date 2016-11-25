@@ -1,3 +1,10 @@
+Team and repository tags
+========================
+
+[![Team and repository tags](http://governance.openstack.org/badges/deb-python-editor.svg)](http://governance.openstack.org/reference/tags/index.html)
+
+<!-- Change things from this point on -->
+
 `python-editor` is a library that provides the `editor` module for programmatically
 interfacing with your system's $EDITOR.
 
